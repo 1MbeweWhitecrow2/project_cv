@@ -15,7 +15,7 @@ node_modules/
 build/
 
 # React public images
-frontend/public/images/  # 👈 added this line to ignore images
+/frontend/public/images/  # 👈 added this line to ignore images
 
 # Misc
 .DS_Store
