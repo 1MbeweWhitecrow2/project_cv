@@ -1,0 +1,32 @@
+.skills-section {
+    padding: 20px;
+  }
+  
+  .all_skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    flex: 1 1 calc(25% - 20px); /* approximately 4 skills per row */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .skill-img {
+    max-width: 100px; /* adjust as needed so that 4 images fit in one row */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+
+
+  .skills-section h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px; /* Adjust the value as needed */
+  }
+  

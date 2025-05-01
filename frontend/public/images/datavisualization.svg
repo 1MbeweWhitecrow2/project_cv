@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#FFB347" />
+  
+  <!-- Simple bar chart motif -->
+  <rect x="40" y="80" width="20" height="70" fill="#ffffff" />
+  <rect x="80" y="60" width="20" height="90" fill="#ffffff" />
+  <rect x="120" y="40" width="20" height="110" fill="#ffffff" />
+  <rect x="160" y="100" width="20" height="50" fill="#ffffff" />
+
+  <text x="50%" y="90%" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle" font-family="sans-serif">
+    Data Visualization
+  </text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#C75D7A" />
+  
+  <!-- Magnifying glass shape -->
+  <circle cx="90" cy="80" r="30" fill="#ffffff" opacity="0.5" />
+  <rect x="105" y="95" width="8" height="40" transform="rotate(45 109 115)" fill="#ffffff" opacity="0.5" />
+
+  <text x="50%" y="88%" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle" font-family="sans-serif">
+    Data Analysis
+  </text>
+</svg>

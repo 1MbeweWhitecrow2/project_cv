@@ -1,0 +1,63 @@
+.certificates-courses {
+    padding: 20px;
+  }
+  
+  .certificates-section,
+  .courses-section {
+    margin-bottom: 40px;
+  }
+  
+  .certificates-section h2,
+  .courses-section h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid for certificates: 4 per row */
+  .certificates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .certificate {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover enlargement */
+  .certificate:hover .certificate-img {
+    transform: scale(2.0);
+  }
+  
+  .certificate-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Courses list styling */
+  .courses-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .courses-list li {
+    margin: 10px 0;
+  }
+  
+  .courses-list a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .courses-list a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,28 @@
+# Django & Python
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+media/
+staticfiles/
+
+# Sensitive info
+.env
+.env.*
+
+# React/Node
+node_modules/
+build/
+
+# React public images
+frontend/public/images/  # 👈 added this line to ignore images
+
+# Misc
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and migrations
+*.log
+migrations/__pycache__/
+

@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#C75D7A" />
+  
+  <!-- Stylized brain shape -->
+  <ellipse cx="100" cy="100" rx="50" ry="35" fill="#ffffff" opacity="0.3" />
+  <ellipse cx="80" cy="100" rx="10" ry="12" fill="#ffffff" />
+  <ellipse cx="120" cy="100" rx="10" ry="12" fill="#ffffff" />
+
+  <text x="50%" y="88%" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle" font-family="sans-serif">
+    Generative AI
+  </text>
+</svg>
