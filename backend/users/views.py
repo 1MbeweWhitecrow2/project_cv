@@ -11,7 +11,7 @@ from rest_framework import status
 from django.contrib.auth.hashers import make_password
 from .models import CustomUser 
 from django.contrib.auth import get_user_model
-from .utils import verify_recaptcha  # 👉 dodajemy import z utils.py
+from .utils import verify_recaptcha  
 import uuid
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import authenticate
