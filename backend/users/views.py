@@ -95,7 +95,6 @@ def register_user(request):
     if CustomUser.objects.filter(email=data['email']).exists():
         return Response({"error": "Email already registered"}, status=status.HTTP_400_BAD_REQUEST)
 
-    # ✅ Weryfikacja reCAPTCHA za pomocą utils
     if not verify_recaptcha(data['recaptcha']):
         return Response({"error": "Invalid reCAPTCHA"}, status=status.HTTP_400_BAD_REQUEST)
 
