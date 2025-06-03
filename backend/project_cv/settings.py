@@ -178,10 +178,10 @@ FRONTEND_BASE_URL = config('FRONTEND_URL')
 
 #Axes settings
 
-AXES_FAILURE_LIMIT = 3                    # Block user after 3 failed attempts
-AXES_COOLOFF_TIME = 2                     # Lockout period: 2 hours
+AXES_FAILURE_LIMIT = 3                                # Block user after 3 failed attempts
+AXES_COOLOFF_TIME = 2                                 # Lockout period: 2 hours
 AXES_LOCKOUT_PARAMETERS = ["ip_address", "username"]  # Lockout based on IP and username
-AXES_RESET_ON_SUCCESS = True              # Reset attempts after successful login
+AXES_RESET_ON_SUCCESS = True                          # Reset attempts after successful login
 
 
 SESSION_COOKIE_SECURE = True
