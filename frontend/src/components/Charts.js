@@ -21,7 +21,7 @@ const Charts = () => {
 
   // Load available stocks
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/stocks/").then((response) => {
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/stocks/`).then((response) => {
       const stocksData = response.data.map((stock) => ({
         value: stock.ticker,
         label: `${stock.ticker} - ${stock.name}`,
@@ -34,12 +34,12 @@ const Charts = () => {
   useEffect(() => {
     const fetchData = async () => {
       if (compareStocks.length === 0) {
-        const response = await axios.get(`http://127.0.0.1:8000/api/stockdata/?ticker=${selectedTicker.value}`);
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/stockdata/?ticker=${selectedTicker.value}`);
         setChartData(response.data.sort((a, b) => new Date(a.date) - new Date(b.date)));
       } else {
         const responses = await Promise.all(
           compareStocks.map(stock =>
-            axios.get(`http://127.0.0.1:8000/api/stockdata/?ticker=${stock.value}`).then(res => ({
+            axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/stockdata/?ticker=${stock.value}`).then(res => ({
               ticker: stock.label,
               data: res.data.sort((a, b) => new Date(a.date) - new Date(b.date)),
             }))
