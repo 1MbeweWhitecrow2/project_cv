@@ -71,7 +71,7 @@ const StockScatterPlot3D = () => {
   useEffect(() => {
     const tickersParam = selectedStocks.join(",");
     axios
-      .get(`http://127.0.0.1:8000/api/scatterplot/?tickers=${tickersParam}`)
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/scatterplot/?tickers=${tickersParam}`)
       .then((response) => {
         setScatterData(response.data);
       })
