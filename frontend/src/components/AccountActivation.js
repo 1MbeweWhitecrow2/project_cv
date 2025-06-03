@@ -9,7 +9,7 @@ const AccountActivation = () => {
     useEffect(() => {
         const activateAccount = async () => {
             try {
-                await axios.get(`http://127.0.0.1:8000/api/users/activate/${token}/`);
+                await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/users/activate/${token}/`);
                 setMessage("Your account has been activated successfully. You can now log in.");
             } catch (error) {
                 setMessage("Account activation failed. The activation link might be invalid or expired.");
