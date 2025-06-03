@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutProject.css"; // Import opcjonalnego pliku CSS dla stylizacji
+import "./AboutProject.css"; 
 
 const AboutProject = () => {
   
