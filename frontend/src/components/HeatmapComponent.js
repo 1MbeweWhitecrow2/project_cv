@@ -10,7 +10,7 @@ const HeatmapComponent = ({ selectedStocks }) => {
       if (selectedStocks.length > 1) {
         const allData = await Promise.all(
           selectedStocks.map(stock =>
-            axios.get(`http://127.0.0.1:8000/api/stockdata/?ticker=${stock.value}`)
+            axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/stockdata/?ticker=${stock.value}`)
               .then(res => ({
                 ticker: stock.value,
                 closePrices: res.data
