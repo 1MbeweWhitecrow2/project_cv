@@ -6,7 +6,7 @@ const CorrelationHeatmap = () => {
     const [heatmapData, setHeatmapData] = useState([]);
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/api/correlation/")
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/correlation/`)
             .then(response => {
                 setHeatmapData(response.data);
             })
