@@ -14,7 +14,7 @@ const CreatePortfolio = () => {
   const [showDescription, setShowDescription] = useState(false); // 🆕 Description toggle
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/stocks/").then((response) => {
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/stocks/`).then((response) => {
       const stocksData = response.data.map((stock) => ({
         value: stock.ticker,
         label: `${stock.ticker} - ${stock.name}`,
