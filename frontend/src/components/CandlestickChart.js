@@ -27,7 +27,7 @@ const Sp500CandlestickChart = () => {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/stockdata/?ticker=${selectedTicker}`)
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/stockdata/?ticker=${selectedTicker}`)
       .then((response) => {
         const data = response.data.map((item) => ({
           x: item.date,
@@ -95,5 +95,6 @@ const Sp500CandlestickChart = () => {
 };
 
 export default Sp500CandlestickChart;
+
 
 
