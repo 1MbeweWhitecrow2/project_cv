@@ -10,7 +10,7 @@ const ScatterPlot3DComponent = ({ selectedStocks }) => {
       const fetchDetails = async () => {
         const responses = await Promise.all(
           selectedStocks.map(stock =>
-            axios.get(`http://127.0.0.1:8000/api/stockdata/?ticker=${stock.value}`)
+            axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/stockdata/?ticker=${stock.value}`)
               .then(res => ({
                 ticker: stock.value,
                 name: stock.label.split(" - ")[1],
