@@ -13,7 +13,7 @@ const ContactForm = () => {
         e.preventDefault();
         setStatus("Sending...");
         try {
-            await axios.post("http://127.0.0.1:8000/api/contact/send/", formData);
+            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact/send/`, formData);
             setStatus("Email sent successfully!");
             setFormData({ name: "", email: "", message: "" });
         } catch (error) {
